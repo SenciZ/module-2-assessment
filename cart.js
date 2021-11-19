@@ -36,6 +36,9 @@
 // ]
 
 
+// const summedPrice = cart.reduce(((acc, current) => acc += current.price),0)
+// console.log(summedPrice);
+
 // const summedPrice = cart.map(items => item = items.price).reduce((acc, current) => acc += current)
 // console.log(summedPrice);
 

@@ -85,16 +85,14 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 // const canWeDeliverTwo = zipCode => {
 //     for(let i = 0; i < deliveryAreaZipCodes.length; i++){
 //         if(deliveryAreaZipCodes[i]===zipCode){
-//             console.log("You're in our delivery zone!");
-//             break;
+//             return "You're in our delivery zone!";
 //         } else {
-//             console.log("Sorry, we can't deliver to that address");
-//             break;
+//             return "Sorry, we can't deliver to that address";
 //         }
 //     }
 // }
 
-// canWeDeliverTwo(85245)
+// console.log(canWeDeliverTwo(85245))
 
 
 
