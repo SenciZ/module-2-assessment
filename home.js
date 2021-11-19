@@ -21,8 +21,9 @@
     'Welcome back, Andrew'
 */
 
-//CODE HERE
 
+// const greetUser = username => `Welcome back ${username}.`
+// console.log(greetUser("Andrew"))
 
 
 
@@ -47,9 +48,17 @@
         // `You're in our delivery zone!`
 */
 
+
+
+
+
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
-//CODE HERE
+// const canWeDeliver = zipCode => deliveryAreaZipCodes.includes(zipCode) ? "You're in our delivery zone!" : "Sorry, we can't deliver to that address";
+// console.log(canWeDeliver(85206)) 
+
+
+
 
 
 
@@ -70,7 +79,25 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
     Name your new function `canWeDeliverTwo`.
 */
 
-// CODE HERE
+
+
+
+// const canWeDeliverTwo = zipCode => {
+//     for(let i = 0; i < deliveryAreaZipCodes.length; i++){
+//         if(deliveryAreaZipCodes[i]===zipCode){
+//             console.log("You're in our delivery zone!");
+//             break;
+//         } else {
+//             console.log("Sorry, we can't deliver to that address");
+//             break;
+//         }
+//     }
+// }
+
+// canWeDeliverTwo(85245)
+
+
+
 
 
 //////////////////PROBLEM 3////////////////////
@@ -106,7 +133,13 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-//CODE HERE
+
+
+
+// deals[0].title = deals[0].title.replace("15", "10");
+// console.log(deals);
+
+
 
 
 
@@ -123,4 +156,5 @@ const deals = [
     to be displaying wrong on the live site.
 */
 
-//CODE HERE
+deals[1].desc = deals[1].desc.replace("March", "April").trim();
+console.log(deals);
