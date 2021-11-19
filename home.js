@@ -156,5 +156,5 @@ const deals = [
     to be displaying wrong on the live site.
 */
 
-deals[1].desc = deals[1].desc.replace("March", "April").trim();
-console.log(deals);
+// deals[1].desc = deals[1].desc.replace("March", "April").trim();
+// console.log(deals);
