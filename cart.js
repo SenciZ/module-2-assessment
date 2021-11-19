@@ -18,24 +18,27 @@
     the food. 
 */
 
-const cart = [
-    {
-        name: 'pizza', 
-        price: 9.99
-    }, 
-    {
-        name: 'pasta', 
-        price: 8.99
-    }, 
-    {
-        name: 'salad', 
-        price: 7.99
-    }
-]
 
-//CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+// const cart = [
+//     {
+//         name: 'pizza', 
+//         price: 9.99
+//     }, 
+//     {
+//         name: 'pasta', 
+//         price: 8.99
+//     }, 
+//     {
+//         name: 'salad', 
+//         price: 7.99
+//     }
+// ]
+
+
+// const summedPrice = cart.map(items => item = items.price).reduce((acc, current) => acc += current)
+// console.log(summedPrice);
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -53,8 +56,13 @@ const cart = [
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
 
+
+// const calcFinalPrice = (cartTotal, couponValue, tax) => {
+//     return cartTotal * (1+tax) - couponValue
+// }
+
+// console.log(calcFinalPrice(50, 10, .05))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -78,7 +86,10 @@ const cart = [
 */
 
 /*
-    TEXT ANSWER HERE
+    Customer object model:
+    The customers information: Name, Last Name, An Address Object: Street, City, State, Zip, Phone Number --- These would all be strings besides the address property which would have strings and one number for the zip. The reason for that is because we would not be doing any mathematical calculations with these.
+
+    The customers previous order: This would be useful to keep track of for future orders to reference. This property would contain an array which would contain an object of the customers previous order. That object itself could contain to following: Order Date, Order Price, Main Entree, Appetizer, Drinks, Payment Method
 
 */
 
@@ -87,4 +98,22 @@ const cart = [
     guidelines.
 */
 
-//CODE HERE
+const customer = {
+  name: "John",
+  lastName: "Smith",
+  address: {
+    street: "3542 Hungry Avenue",
+    city: "Restaurant Town",
+    state: "CA",
+    zip: 09372,
+  },
+  phone: "687-348-9753",
+  previousOrder: {
+    orderDate: 09 - 12 - 2021,
+    orderPrice: 32.42,
+    mainEntree: "Fettucine Alfredo",
+    appetizer: "Calamari",
+    drink: "Coke",
+    paymentMethod: "Visa",
+  },
+};
